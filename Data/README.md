@@ -18,9 +18,9 @@ This project involves scraping data from the [FBRER website](https://fbref.com/e
    install.packages(c("tidyverse", "rvest", "dplyr", "httr", "curl"))
    ```
 
-2. **Data Scraping**:
+2. **Data Scraping**: 
    - Run `script.R` in the R environment to scrape data from the website. This step will save `.csv` files in the `/data` folder.
-
+   - It can be found [here](/Data/script.R)
    ```r
    source("script.R")
    ```
@@ -136,7 +136,7 @@ Data/
 
 ### Notes
 
-- **Data Sources**: Ensure the source URL in `script.R` is current to avoid scraping errors.
+- **Data Sources**: Ensure the source URL in `script.R` is up to date to avoid scraping errors.
 - **Error Handling**: Each script includes basic error-handling mechanisms to skip or log failed extractions for later review.
 ---
 

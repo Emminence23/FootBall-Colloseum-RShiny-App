@@ -3,13 +3,12 @@
 [Report.pdf](./Report.pdf) is the pdf getting rendered from [Report.qmd](./Report.qmd). You can Generate it yourself by : 
 
 ### Instructions for PDF Rendering
-
 This report requires a TeX distribution for PDF rendering. If you do not have one installed, please follow these steps:
 
 1. **Install TinyTeX (recommended)**:
    - Open your terminal and run:
-     ```bash
-     quarto install tinytex
+     ```R
+      quarto install tinytex
      ```
    - TinyTeX will be automatically set up for Quarto.
 
@@ -20,11 +19,11 @@ This report requires a TeX distribution for PDF rendering. If you do not have on
 
     > (make sure you are in the ./Reports Directory)
     - Run this in your terminal:
-    ```
-    quarto preview Report.qmd --to pdf --no-watch-inputs --no-browse
+    ```R
+      quarto preview Report.qmd --to pdf --no-watch-inputs --no-browse
     ```
     - You can also run: (to just generate the pdf file)
-    ```
-    quarto render Report.qmd --to pdf
+    ```R
+      quarto render Report.qmd --to pdf
     ```
 --- 
