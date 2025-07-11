@@ -32,7 +32,7 @@ install.packages(c(
   'DT'
 ))
 ```
->- Go to `app.R` and press :Rightarrow: Run App.
+>- Go to `app.R` and press ➡️ Run App.
 
 ## Index
 - General Description
