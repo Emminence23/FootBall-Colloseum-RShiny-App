@@ -1,4 +1,4 @@
-# Libraries from utils.R
+# Libraries loaded from utils.R
 
 get_dir <- function(category){
   file_path <- paste0("../Data/Player_Comparison_Data/", category, "/data.RData")
@@ -136,7 +136,6 @@ page1_server <- function(input, output, session) {
 
   # Render Radar Plot
   output$radarPlot <- renderPlot(
-    bg = rgb(1, 0.97, 1, 0.98),
     height = 350,
     {
       # Prepare data for radar chart

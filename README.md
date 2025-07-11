@@ -1,13 +1,38 @@
 # FOOTBALL COLOSSEUM
 ## A R-Shiny App for football data representation and visulisation. 
-### 2024-25 Fall Semester 
-### MTH 208 Project
-### Course instructor: Prof. Dootika Vats
+
+2024-25 Fall Semester 
+
+MTH 208 Course Project
+
+Course instructor: Prof. Dootika Vats
+
+![App/Homepage](/Images/HomePage.png)
+
 > Group 1: 
+>- ⭐ Tattwa Shiwani
 >- ⭐ Ashmit Bathla
 >- ⭐ Piyush Singh
->- ⭐ Tattwa Shiwani
 >- ⭐ Ved Patil
+
+## To Run : 
+> Open in R studio
+>- Install the packages by running this in terminal : 
+```R
+install.packages(c(
+  'shiny',
+  'shinyjs',
+  'dplyr',
+  'ggplot2',
+  'fmsb',
+  'GGally',
+  'viridis',
+  'hrbrthemes',
+  'plotly',
+  'DT'
+))
+```
+>- Go to `app.R` and press :Rightarrow: Run App.
 
 ## Index
 - General Description
@@ -24,32 +49,58 @@ The shinly app developed in the project provides a one stop comprehensive place 
 
 The Application is of interest to football coaches , strategists and generally all enthusiasts. We have stressed on User Interface and User Experience , and provided a lot of flexibility and possibilities to the user. You can explore the entirity of the data, and because the data at FBRER is same for 
 
-### How to Run
-
-### Insights to the Application 
+## Insights to the Application 
 
 The R-shiy app serves multiple purposes, and offers the following features: 
 
->- **Squad/Player Analytics** : The most fundemental feature, this part of the app allows a user to view data for a perticular club (player) for a specific season. 
-The detailed data is segrated according to the possibles roles a personel takes on the feild, these include '__Attack__', '__Defense__', '__Advance__' (general term for what is commany called midfild) '__Fair Play__', '__General__' (Only for player specific analysis, includes statistics of the players apperances and time spent on the feild.) and '__Win Loss__' (Only for club specific analysis, mainly includes the final league stading of the league for that perticuler season.)
-The user will be promted to select a season, league, a club or a player and then the kind of statistics he is intrested in. 
+1. **Squad Data Visualisation** : 
+>   ![Squad Data Visualisation](Images\page_1.png)
+>   - Lets the user visualize combined metric for the entire seasons.
+>   - Select any combination of data from any of the five leagues and from the past 5 years of available data.
+>   - Data available on different domains : 'Attack', 'Advance', 'Defense', 'Fair Play', 'Goal_Keeping' and 'win_loss' 
+>   - Helpful for Correlation Analysis. 
 
->- **Player Comparison** The app facilitates visual comparision of upto 3 players for a given season. The comparisions can be again made according to the the roles which a player can take up, as detailed above.
-An intresting note to make is that the since the app allows a user to choose any player Irrespective of his position in the squad and the kind of statistic to compare the players, It is possible to make Unorthodox comparisons, like comparing the defensive actions of 2 center forwards, Since they could also be expected to perform defensive duties incase the they are playing with 10 pairs of foots on the feild. 
+> Some insights which were made visible because of these plots are : 
+>- Assists_scores are highly correlated to Total_Goals scored.
+>- Medium_Passes_Attempted is highly correlated to Possession.
 
->- **Squad Data Visulisation** 
+---
 
+2) **Player/Club Analysis** 
+> ![Club Analysis](Images\page_2a.png)
+>   - Select a particular league and season to access club wise data among 5 categories.
+>   - Helps access the data in order to compare clubs against each other on multiple metrics.
 
->- **Market Value Analysis** 
+> ![Player Analysis](Images\page_2b.png)
+>   - Change the level of data to player. Provides access to player level data from each club.
+>   - Gives spider plots / radar plots to analyse metrics of one player according to the kind of statistic (5 categories).
+
+---
+
+>3) **Player Comparison** 
+> ![Player Comparison](Images\page_3.png)
+>   - Facilitates comparative analysis of upto 3 players from any given League and season via radar plots.
+>   - Gives access to a table having the relevant data rows from the scraped datasets across different playing positions.
+
+---
+
+>4) **Market Value Analysis** Estimate the valuation of players in million ($) using the past data.
+> ![Market Analysis](Images\page_4.png)
+>   - Gives market values after the seasonal auction of players.
+>   - This is a country wise comparison, made using the dataset : 
+>       - ![Market Comp](Images\page_4b.png)
 --- 
-<!-- ![QR](project\qr-code.png) -->
 
-Data Driven App for Football Stats Analysis
+### More Documentaion can be found at :
+
+- Data Scraping : [Data.md](./Data/README.md)
+
+- Presentation : [.pptx](./Presentation/Presentation.pptx)
+
+- Report : [Report.md](./Report/README.md)
+
+- App : [App.md](./ShinyApp/README.md)
 
 <div style="display: flex; align-items: center;">
     <img src="project/qr-code.png" alt="QR Code" style="width:150px; height:auto; margin-right: 15px;">
-    <p> QR code to our repository : <br><br> <i>https://github.com/dootika/mth-208-course-project-24group-1</i></p>
 </div>
-
-### More Links
-[Data.md](./Data/README.md)

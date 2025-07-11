@@ -3,14 +3,12 @@
 ################################################################################
 
 
-# Load required packages 
+# Packages used in scraping
 library(tidyverse)
 library(rvest)
 library(dplyr)
 library(httr)
 library(curl)
-
-Dir = "~/OneDrive - IIT Kanpur/Documents/IITKANPUR/SEM7/MTH208/Peoject"
 
 
 extract_data = function( Dir , league , link ){ 
@@ -966,6 +964,7 @@ extract_data = function( Dir , league , link ){
   
 }
 
+# Dir = # type out your choice of location for scraping
 
 extract_data( Dir , 
         "Premier_League" , 

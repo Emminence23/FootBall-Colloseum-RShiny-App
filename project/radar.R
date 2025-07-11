@@ -13,8 +13,6 @@ data <- data.frame(
   saves = sample(0:20, 15, replace = TRUE)
 )
 
-
-
 # Filter for selected players and seasons (replace with actual selections)
 selected_data <- data %>%
   filter((player == "Player A" & season == 2022) |

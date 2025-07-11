@@ -1,10 +1,6 @@
-library(GGally)
-library(viridis)
-library(hrbrthemes)
-library(plotly)
-library(DT)
+# Libraries loaded from utils.R
 
-### Pre define functions for ease of exicution of the page : 
+### Pre define functions for ease of execution of the page : 
 
 get_player_dir = function( league , season){
   season <- as.numeric(season) - 2000

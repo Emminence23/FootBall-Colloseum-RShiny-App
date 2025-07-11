@@ -1,8 +1,13 @@
 library(shiny)
+library(shinyjs)
 library(dplyr)
 library(ggplot2)
-library(shinyjs)
 library(fmsb)
+library(GGally)
+library(viridis)
+library(hrbrthemes)
+library(plotly)
+library(DT)
 
 # Source individual page files
 source("pages/home.R")
